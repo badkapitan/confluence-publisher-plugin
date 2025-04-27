@@ -49,7 +49,7 @@ import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.interceptor.RequirePOST;
 
 import edu.umd.cs.findbugs.annotations.CheckForNull;
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -279,7 +279,7 @@ public class ConfluenceSite implements Describable<ConfluenceSite> {
 
             return new FormValidation.URLCheck() {
                 @Override
-                protected FormValidation check() throws IOException, ServletException {
+                protected FormValidation check() throws IOException {
 
                     if (newurl == null) {
                         return FormValidation.error("Enter a URL");

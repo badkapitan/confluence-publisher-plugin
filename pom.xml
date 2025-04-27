@@ -21,13 +21,13 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>4.73</version>
+        <version>4.88</version>
         <relativePath />
     </parent>
 
     <properties>
         <changelist>9999-SNAPSHOT</changelist>
-        <jenkins.version>2.410</jenkins.version>
+        <jenkins.version>2.492.2</jenkins.version>
         <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
         <no-test-jar>false</no-test-jar>
         <!-- TODO fix existing violations -->
@@ -83,14 +83,14 @@
             <dependency>
                 <groupId>io.jenkins.tools.bom</groupId>
                 <artifactId>bom-2.401.x</artifactId>
-                <version>2446.v2e9fd3b_d8c81</version>
+                <version>2661.vb_b_60650f6d97</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
             <dependency>
                 <groupId>com.atlassian.plugins</groupId>
                 <artifactId>atlassian-plugins-core</artifactId>
-                <version>7.3.1</version>
+                <version>7.4.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -162,6 +162,11 @@
           <groupId>javax.mail</groupId>
           <artifactId>mail</artifactId>
           <version>1.4.7</version>
+        </dependency>
+        <dependency>
+          <groupId>jakarta.servlet</groupId>
+          <artifactId>jakarta.servlet-api</artifactId>
+          <version>6.0.0</version>
         </dependency>
     </dependencies>
 
